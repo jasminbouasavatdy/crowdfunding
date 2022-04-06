@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
   const projects = projectData.map((project) => {
     return project.get({ plain: true });
   });
-
+console.log(projects);
   res.render('all', { projects });
 });
 
